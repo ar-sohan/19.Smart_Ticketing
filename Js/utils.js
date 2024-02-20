@@ -1,5 +1,10 @@
 var count = 0;
 
+const phoneNumber = document.getElementById('phoneNumber').value;
+if (phoneNumber !== "") {
+    document.getElementById(next).removeAttribute('disabled');
+}
+ 
 function changeSelectedSeat(id) {
     count++;
     document.getElementById('seatCount').innerText = count;
