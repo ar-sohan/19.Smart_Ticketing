@@ -1,9 +1,9 @@
 var count = 0;
-
-const phoneNumber = document.getElementById('phoneNumber').value;
-if (phoneNumber !== "") {
-    document.getElementById(next).removeAttribute('disabled');
-}
+document.getElementById('phoneNumber').addEventListener('input', function () {
+    if (count>0) {
+    document.getElementById('next').disabled = false;
+    }
+})
  
 function changeSelectedSeat(id) {
     count++;
