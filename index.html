@@ -151,7 +151,7 @@
             </section>
             <!-- the clickable bus seat section  -->
             <section class="flex bg-white rounded-xl mt-5 py-5">
-              <section class="w-auto p-5">
+              <section class="w-[60%] p-5">
                 <h1 class="text-2xl font-bold mb-5">Select Your Seat</h1>
                 <hr class="border-2 border-dashed">
                 <div class="flex justify-between my-5">
@@ -276,26 +276,61 @@
               </section>
               <img src="images/ticketDivider.png" alt="">
               <!-- the calculation of booked seats section -->
-              <section class="pl-5">
-                <h1 class="text-2xl font-bold mb-5">Select Your Seat</h1>
-                <div>
-                  <ul class="flex gap-10 font-bold">
-                    <li>Seat <span id="seatCount">0</span></li>
-                    <li>Class</li>
-                    <li>Price</li>
-                  </ul>
-                </div>
+              <section class="pl-5 bg">
+                <h1 class="text-2xl font-bold my-5">Select Your Seat</h1>
                 <hr class="border-2 border-dashed">
-                <div id="selectedSeats">
-                
-                </div>
-                <hr class="border-2 border-dashed">
-                <div>
-                  <p >Total Price</p>
-                </div>
-                <div>
-                  
-                </div>
+                <section class="bg-[#F7F8F8] p-5 mt-5 rounded-xl">
+                  <div>
+                    <ul class="flex gap-10 font-bold">
+                      <li>Seat <span id="seatCount" class="bg-[#1DD100] text-white font-bold p-1 rounded-md">0</span></li>
+                      <li>Class</li>
+                      <li>Price</li>
+                    </ul>
+                  </div>
+                  <hr class="border-2 border-dashed">
+                  <div id="selectedSeats">
+                    
+                  </div>
+                  <hr class="border-2 border-dashed">
+                  <div class="flex gap-10 font-bold my-3">
+                    <p>Total Price</p>
+                    <p>BDT <span id="totalPrice"></span></p>
+                  </div>
+                  <div class="flex gap-5 mb-5" id="discountedPrice">
+
+                  </div>
+                  <div id="couponBox" class="my-5 flex relative">
+                    <input id="couponInput" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" disabled/>
+                    <div>
+                      <button onclick="couponApply()" id="couponApply" class="btn btn-success text-white bg-[#1DD100] absolute right-[2px]" disabled>Apply</button>
+                    </div>
+                  </div>
+                  <div class="flex gap-5 font-bold">
+                    <p>Grand Total</p>
+                    <p>BDT <span id="grandTotal"></span></p>
+                  </div>
+                </section>
+                <section class="my-5">
+                  <div>
+                    <p class="mb-3 text-lg font-bold">Passenger Name*</p>
+                    <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full max-w-xs" />
+                  </div>
+                  <div>
+                    <p class="my-3 text-lg font-bold">Phone Number*</p>
+                    <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered w-full max-w-xs" />
+                  </div>
+                  <div>
+                    <p class="my-3 text-lg font-bold">Email ID</p>
+                    <input type="text" placeholder="Enter Your Email ID" class="input input-bordered w-full max-w-xs" />
+                  </div>
+                  <div class="my-5 text-center">
+                    <button class="btn btn-wide bg-[#1DD100] text-white">Next</button>
+                  </div>
+                  <div class="flex gap-5 underline text-[#03071299]">
+                    <p>Terms and Conditions</p>
+                    <p>Cancellation Policy</p>
+                  </div>
+                </section>
               </section>
             </section>
         </section>
