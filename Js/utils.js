@@ -10,6 +10,7 @@ function changeSelectedSeat(id) {
     document.getElementById('seatCount').innerText = count;
     document.getElementById('leftSeats').innerText = 40 - count;
     document.getElementById('totalPrice').innerText = count * 550;
+    document.getElementById('grandTotal').innerText = count * 550;
     if (count > 3) {
         document.getElementById('couponInput').removeAttribute('disabled');
         document.getElementById('couponApply').removeAttribute('disabled');
